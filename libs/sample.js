@@ -1,8 +1,8 @@
 import { PutObjectCommand, CreateBucketCommand } from "@aws-sdk/client-s3";
-import { s3Client } from "./sampleClient"
+import { s3Client } from "./sampleClient.js"
 
 const params = {
-    Bucket: "sample-bucket-101", 
+    Bucket: "ecs-dashboard-bucket", 
     Key: "sample_upload.txt", 
     Body: "Hello world", 
   }
